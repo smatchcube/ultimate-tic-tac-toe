@@ -1,0 +1,19 @@
+name:                ultimate-tic-tac-toe
+version:             0.1.0.0
+synopsis:            A variant of the traditional tic-tac-toe game.
+description:         This is a little game I wrote in an afternoon when I had the flu. Don't expect the code to be bug-free nor readable. See https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe for rules and more information about this game.
+license:             MIT
+license-file:        LICENSE
+author:              smatchcube
+maintainer:          smatchcube@tfwno.gf
+category:            Game
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+                     
+executable ultimate-tic-tac-toe
+  main-is:             Main.hs
+  other-modules:       UltimateTicTacToe
+  build-depends:       base >=4.11 && <4.12
+  default-language:    Haskell2010
+  ghc-options:         -O3
